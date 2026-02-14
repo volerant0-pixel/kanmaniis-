@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💕 Be My Valentine? 💕</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Music player -->
+    <div class="music-player" id="musicPlayer">
+        <button class="music-toggle" id="musicToggle">
+            <span class="music-icon">🎵</span>
+            <span class="music-text">Play Music</span>
+        </button>
+        <audio id="bgMusic" loop>
+            <source src="Hey Nijame From Enai Noki Paayum Thota-320kbps.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- Floating hearts background -->
+    <div class="hearts-container" id="heartsContainer"></div>
+
+    <!-- Confetti canvas -->
+    <canvas id="confettiCanvas"></canvas>
+
+    <!-- Main content -->
+    <div class="container">
+        <div class="card">
+            <!-- Cute image placeholder -->
+            <div class="image-container">
+                <img src="puppy,jpg.jpeg" alt="Please..." id="puppyImage">
+                <div class="image-label">PLEASE...</div>
+            </div>
+
+            <!-- Main question -->
+            <h1 class="main-text">
+                <span class="fine-girl">Fine girl,</span>
+                <span class="will-you">will you be my</span>
+                <span class="valentine">Valentine?</span>
+            </h1>
+
+            <!-- Buttons -->
+            <div class="button-container">
+                <button class="btn btn-yes" id="yesBtn">Absolutely 💕</button>
+                <button class="btn btn-no" id="noBtn">Ummm...🤔</button>
+            </div>
+
+            <!-- Love doodle -->
+            <svg class="love-doodle" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 10 50 Q 30 20, 50 50 T 90 50 T 130 50 T 170 50" stroke="#ff6b9d" stroke-width="3" fill="none"
+                    stroke-linecap="round" />
+                <text x="100" y="80" font-family="Pacifico" font-size="32" fill="#ff6b9d"
+                    text-anchor="middle">love</text>
+                <path d="M 175 45 Q 180 35, 185 45 Q 190 35, 195 45" stroke="#ff6b9d" stroke-width="2.5"
+                    fill="#ff6b9d" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- Celebration modal -->
+    <div class="modal" id="celebrationModal">
+        <div class="modal-content">
+            <h2 class="celebration-text">Yay! 🎉💖</h2>
+            <p class="celebration-message">I knew you'd say yes! my kanmaniii</p>
+            <div class="love-message" id="loveMessage">
+                <p class="message-line">✨ You make my heart skip a beat by your eyes ✨</p>
+                <p class="message-line">💕 Every moment with you is magical by your smile 💕</p>
+                <p class="message-line">🌹 You're my favorite person who make me happy and love a lot🌹</p>
+                <p class="message-line">💖 Happy Valentine's Day! my kanmaniii as jo 💖</p>
+                <p class="message-line">💖 I love you jo 💖</p>
+                <p class="message-line">💖 இன்றும் வியக்கிறேன்
+                    எவருக்கும் பிடிகொடுக்காத
+                    என் இதயம் உன் கண்களை
+                    பார்த்த அந்த நொடி எப்படி
+                    தொலைந்தது என்று.....
+                    தேட விருப்பமில்லை
+                    நீயே வந்துவிடு இதயமாக....
+                    En Kanmani....</p>
+            </div>
+            <div class="heart-explosion" id="heartExplosion"></div>
+            <button class="btn btn-close" id="closeBtn">Close 💕</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
